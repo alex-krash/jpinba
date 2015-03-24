@@ -1,16 +1,15 @@
-jpinba
-=============
-**Pure JAVA client for [Pinba] Engine (http://pinba.org)**
+package org.krash.jpinba;
 
-Pinba is a MySQL storage engine that acts as a realtime monitoring/statistics server
-using MySQL as a read-only interface.
-Jpinba provides client for Pinba server that provides statistics sending from your application.
+import org.krash.jpinba.data.JPinbaRequest;
+import org.krash.jpinba.data.Tag;
+import org.krash.jpinba.data.Timer;
 
-## Usage
+import java.io.IOException;
 
-General usage of client:
-
-```java
+/**
+ * Emulation of sending data, measured single request
+ * @author krash
+ */
 public class Main {
 
     public static void main(String[] argv) throws InterruptedException, IOException {
@@ -34,8 +33,3 @@ public class Main {
         client.send(request);
     }
 }
-```
-
-## Servlet API
-For ready-to-ride integration with javax.servlet-api, see module [jpinba-servlet](../blob/master/jpinba-servlet/src/test/java/org/krash/jpinba/Main.java).
-
