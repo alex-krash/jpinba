@@ -1,6 +1,6 @@
 jpinba
 =============
-**Pure JAVA client for [Pinba] Engine (http://pinba.org)**
+**Pure JAVA client for Pinba Engine (http://pinba.org)**
 
 Pinba is a MySQL storage engine that acts as a realtime monitoring/statistics server
 using MySQL as a read-only interface.
@@ -37,5 +37,5 @@ public class Main {
 ```
 
 ## Servlet API
-For ready-to-ride integration with javax.servlet-api, see module [jpinba-servlet](../blob/master/jpinba-servlet/src/test/java/org/krash/jpinba/Main.java).
+For ready-to-ride integration with javax.servlet-api, see module [jpinba-servlet](jpinba-servlet/src/test/java/org/krash/jpinba/Main.java).
 
